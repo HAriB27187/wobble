@@ -1,0 +1,383 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #334155;
+}
+
+/* Header Styles */
+header {
+    background-color: rgb(30, 41, 59);
+    padding: 1rem 0;
+    padding-right: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar {
+    background-color: rgba(30, 41, 59, 0.95);
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-left: 50px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo i {
+    margin-right: 8px;
+    color:#f39c12;
+}
+
+.navbar-nav .nav-link {
+    color: #f1f5f9;
+    font-size: 16px;
+    font-weight: 500;   
+    padding: 0.5rem 1rem;
+    padding-right: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f39c12;
+}
+
+/* Page Banner */
+.page-banner {
+    background: linear-gradient(rgba(44, 62, 80, 0.8),
+            rgba(44, 62, 80, 0.8)),
+        url("/api/placeholder/1200/400") center/cover no-repeat;
+    color: #f1f5f9;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+/* Section Style */
+section {
+    padding: 4rem 0;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 3px;
+    background-color: #2563eb;
+}
+
+/* Company Overview */
+.company-overview {
+    background-color: #fff;
+}
+
+/* Mission and Vision */
+.mission-vision {
+    background-color: #f8fafc;
+}
+
+.mission-card,
+.vision-card {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.mission-card:hover,
+.vision-card:hover {
+    transform: translateY(-5px);
+}
+
+.icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.icon-box i {
+    font-size: 2rem;
+    color: #f1f5f9;
+}
+
+/* Why Choose Us */
+.why-choose-us {
+    background-color: #fff;
+}
+
+.feature-box {
+    text-align: center;
+    padding: 2rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    height: 100%;
+    transition: all 0.3s;
+}
+
+.feature-box:hover {
+    background: #2563eb;
+    color: #f1f5f9;
+}
+
+.feature-box i {
+    font-size: 2.5rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+    transition: color 0.3s;
+}
+
+.feature-box:hover i {
+    color: #f1f5f9;
+}
+
+/* Team Section */
+.team {
+    background-color: #f8fafc;
+}
+
+.team-member {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.team-member h4 {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.team-member p {
+    color: #2563eb;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Team Social Links - Fixed */
+.team-member .social-links a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-color: #2563eb;
+    color: #f1f5f9;
+    border-radius: 50%;
+    line-height: 36px;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.team-member .social-links a:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* Remove Font Awesome icon styling for team social links */
+.team-member .social-links a::before {
+    display: none;
+}
+
+/* Achievements */
+.achievements {
+    background-color: #fff;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.achievement-icon {
+    font-size: 2.5rem;
+    color: #f39c12;
+    margin-right: 1.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #f1f5f9;
+    padding: 80px 0 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(14, 165, 233, 0.05);
+    border-radius: 50%;
+}
+
+.footer-links h5 {
+    margin-bottom: 25px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-links h5::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #2563eb;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 12px;
+}
+
+.footer-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 15px;
+}
+
+.footer-links a::before {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2563eb;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: white;
+    padding-left: 20px;
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+}
+
+/* Footer Social Links - Fixed */
+footer .social-links {
+    margin-top: 25px;
+}
+
+footer .social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    padding-left: 0;
+}
+
+footer .social-links a:hover {
+    background-color: #f39c12;
+    transform: translateY(-5px);
+    padding-left: 0;
+}
+
+/* Remove font awesome icon styling for footer social links */
+footer .social-links a::before {
+    display: none;
+}
+
+.footer-form .form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    padding: 12px 15px;
+}
+
+.footer-form .form-control::placeholder {
+    color: #94a3b8;
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 60px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.copyright a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #2563eb;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-banner {
+        padding: 3rem 0;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
+}
